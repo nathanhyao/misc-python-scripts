@@ -1,3 +1,8 @@
+###############################################################################
+# Automates answering polls on Purdue Hotseat. Don't use this script. Cutting
+# corners is practically never a good idea, I found out last Thursday.
+###############################################################################
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -41,8 +46,6 @@ print("Complete Purdue DUO Two-Factor Authentication.\n",
 
 username = input("Username: ")
 password = getpass.getpass("Password: ")
-# username = "nhyao"
-# password = "0502,push2"
 
 username_field = driver.find_element(By.ID, "username")
 username_field.send_keys(username)

@@ -1,9 +1,7 @@
-'''
-This console program was created because I wanted to improve my typing speed.
-Despite playing a bunch of typeracer (https://play.typeracer.com/) and
-monkeytype (https://monkeytype.com/), it felt like my speed was plateauing,
-apparently because I kept frequently mistyping a set of specific characters.
-'''
+###############################################################################
+# Console program tracks miss-typed letters then provides practice words.
+# Originally wanted to be extremely fast at typing; reached 100 wpm avg. 
+###############################################################################
 
 import random
 
