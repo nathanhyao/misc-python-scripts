@@ -34,7 +34,7 @@ try:
     )
     login_button = login_container.find_element(By.CLASS_NAME, "hover-shadow")
     login_button.click()
-except:
+except Exception:
     print("ERROR: Unable to load login screen!")
     driver.quit()
 
@@ -67,7 +67,7 @@ try:
     topic_container = hotseat_content.find_element(By.ID, "private")
     science_button = topic_container.find_element(By.LINK_TEXT, "Science")
     science_button.click()
-except:
+except Exception:
     print("ERROR: Unable to load HotSeat content!")
     driver.quit()
 
@@ -80,7 +80,7 @@ try:
     )
     science_poll_button = science_content.find_element(By.LINK_TEXT, "Polls")
     science_poll_button.click()
-except:
+except Exception:
     print("ERROR: Unable to load Science Polls page!")
     driver.quit()
 
@@ -101,7 +101,7 @@ while True:
         alert.accept()
 
         time.sleep(10) # sleep 10 seconds to avoid overloading active poll
-    except:
+    except Exception:
         print("ERROR: Unable to find any polls!")
         driver.quit()
         break
